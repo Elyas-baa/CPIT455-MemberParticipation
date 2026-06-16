@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saeed Alzahrani — Individual Report</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="kicker">CPIT455 · Iteration 2 · Individual Report</div>
+      <h1>Saeed Alzahrani</h1>
+      <div class="role">Distributed Software · System of Systems</div>
+      <div class="meta">TANDIB · Group 2 · 16 June 2026</div>
+    </div>
+
+    <div class="card">
+      <h2>The Concepts I Implemented</h2>
+      <p class="lead">My responsibility was to apply <strong>distributed software</strong> and <strong>system of systems</strong> (Sommerville Ch.17–19), making TANDIB work as a connected service across many devices and partners rather than a single isolated program.</p>
+    </div>
+
+    <div class="card">
+      <h2>How I implemented <em>Distributed Software</em></h2>
+      <ul>
+        <li>I treated TANDIB as a distributed system: a central service that many separate devices reach over the network at the same time, not one program on one machine.</li>
+        <li>I handled the realities of distribution — devices and the central service communicate over the internet, so I designed for delays and for the connection sometimes failing.</li>
+        <li>I made sure information stays consistent across all those devices, so every user sees a correct and up-to-date picture.</li>
+        <li>This separation of concerns is what lets the system serve many users in different places simultaneously.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>How I implemented <em>System of Systems</em></h2>
+      <ul>
+        <li>I applied the idea that TANDIB is not one system but several independent systems working together as one experience.</li>
+        <li>Some of these systems are owned and operated by other parties, outside our control — our role was to safely orchestrate them, not to own them.</li>
+        <li>I designed clean boundaries between our system and the external ones, so a change or fault on their side does not break ours.</li>
+        <li>The result is a single, smooth service for the user, even though several independent systems stand behind it.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Reflection</h2>
+      <p>I learned that modern software is rarely built alone — it lives in a network of devices and cooperates with systems owned by others. The hard part of distribution and systems-of-systems is not the happy case but the boundaries: what happens when the network is slow, or when a system we don't control behaves unexpectedly. Designing for those boundaries is what makes a distributed product actually work in the real world.</p>
+    </div>
+
+    <footer>TANDIB · CPIT455 · Iteration 2 · Group 2 · <a href="index.html">← all reports</a></footer>
+  </div>
+</body>
+</html>

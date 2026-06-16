@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amer Bugshan — Individual Report</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="kicker">CPIT455 · Iteration 2 · Individual Report</div>
+      <h1>Amer Bugshan</h1>
+      <div class="role">Reliability · Safety · Resilience</div>
+      <div class="meta">TANDIB · Group 2 · 16 June 2026</div>
+    </div>
+
+    <div class="card">
+      <h2>The Concepts I Implemented</h2>
+      <p class="lead">My responsibility was to implement three attributes of dependability — <strong>reliability</strong>, <strong>safety</strong> and <strong>resilience</strong> (Sommerville Ch.10) — and to prove them through testing.</p>
+    </div>
+
+    <div class="card">
+      <h2>How I implemented <em>Reliability</em></h2>
+      <ul>
+        <li>I made important actions all-or-nothing: either every step of an action succeeds, or the whole action is undone and nothing is left half-finished.</li>
+        <li>I ensured the system always gives consistent results, so its state never contradicts what the user is told.</li>
+        <li>I applied verification and validation — automated tests that re-check the correct behaviour after every change, so reliability cannot silently break.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>How I implemented <em>Safety</em></h2>
+      <ul>
+        <li>I made sure the system cannot enter harmful states — actions that would cause loss or impossible values are blocked rather than trusted not to happen.</li>
+        <li>I modelled valid steps so the system refuses any invalid or out-of-order action.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>How I implemented <em>Resilience</em></h2>
+      <ul>
+        <li>I designed the system to keep doing its core job even when a part it depends on misbehaves.</li>
+        <li>When something goes wrong, the user receives a clear, honest message instead of a crash, so a single failure does not bring the whole service down — it degrades gracefully.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Reflection</h2>
+      <p>The biggest lesson was to design for failure, not just for success — to ask "what happens when this goes wrong?" at every step. I also learned the value of verification and validation: moving from "it seems to work" to "we can prove it works" with automated tests. That shift is, to me, the heart of what software engineering means.</p>
+    </div>
+
+    <footer>TANDIB · CPIT455 · Iteration 2 · Group 2 · <a href="index.html">← all reports</a></footer>
+  </div>
+</body>
+</html>
